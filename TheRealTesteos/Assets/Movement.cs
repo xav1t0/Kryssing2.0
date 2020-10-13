@@ -25,22 +25,22 @@ public class Movement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.W))
         {
-            player.transform.Translate(0,0,1*Time.deltaTime);
+            player.transform.Translate(0,0,-1 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            player.transform.Translate(0, 0, -1 * Time.deltaTime);
+            player.transform.Translate(0, 0, 1 * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            player.transform.Translate(-1 * Time.deltaTime, 0, 0 );
+            player.transform.Translate(1 * Time.deltaTime, 0, 0 );
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            player.transform.Translate(1 * Time.deltaTime, 0, 0 );
+            player.transform.Translate(-1 * Time.deltaTime, 0, 0 );
         }
             
         if (Input.GetKeyDown(KeyCode.Space))
